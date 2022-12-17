@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function sleep(milliseconds) {
+                const date = Date.now();
+                let currentDate = null;
+                do {
+                    currentDate = Date.now();
+                } while (currentDate - date < milliseconds);
+            }
+            function hi() {
+                alert('hi');
+            }
+            function toobad() {
+                pimon.play()
+                document.body.style.backgroundImage = "url('bread.jpg')";
+                sleep(3350)
+                
+            }
+
+            var pimon = new Audio('./pimon.mp3')
+        </script>
+        <center>
+        <h1>
+            Pimon is turning into what she loves most.
+        </h1>
+        <!-- this is a comment. -->
+        <img src="pimon.jpg">
+        </center>
+        <p>
+            facts about pimon<br>
+            1. pimon has 15 stomachs<br>
+            2.pimon is an idoit<br>
+            3. (not a fact about pimon) all chrachters in genshin are no where even close to being dressed properly.
+        </p>
+
+        <button onclick="toobad()">eat pimon</button>
+    </head>
+</html>
